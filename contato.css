@@ -5,10 +5,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*-------navbar----------*/
-.header{
-    margin-top:50px;
+.header {
+    margin-top: 15px;
     margin-bottom: 30px;
-    
 }
 
 span{
@@ -34,8 +33,12 @@ nav ul li a{
     color:black;
 }
 nav ul li a:hover{
-    color: white;
+    color: #AD1F1F;
 
+}
+
+.btn-n{
+    display:none;
 }
 
 .consulta-btn{
@@ -71,12 +74,35 @@ nav ul li a:hover{
 
 /*-------home----------*/
 
+
 .home{
     padding: 10px;
     display: flex;
     justify-content: left;
     
 }
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 2;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 2px;
+    background: #FC3030;
+    transition: 0.3s;
+}
+
+
 
 .img_cont{
     width: 2000px;
@@ -315,4 +341,178 @@ iframe{
     position: relative;
     margin-top: 30px;
     right: 105px;
+}
+
+
+@media (max-width: 600px) {
+
+
+
+
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .logo{
+        position: relative;
+        bottom: 30px;
+    }
+    .hamburger {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 30px;
+        z-index: 1;
+        
+    }
+    .btn-n{
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+  
+      .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+      }
+    
+      .nav.active .nav-list a {
+        opacity: 1;
+      }
+    
+      .nav.active .hamburger {
+        position: fixed;
+        border-top-color: transparent;
+      }
+    
+
+    .btn{
+        display: none;
+    }
+    .consulta-btn{
+        display: none;
+    }
+
+
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_cont {
+        width: 100%;
+    }
+
+    .contato {
+        width: 100%;
+    }
+
+    .txt {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .contact-left {
+        width: 100%;
+    }
+
+    .contact-inputs {
+        width: 100%;
+    }
+
+    .contact-left-title h2 {
+        font-size: 32px;
+    }
+
+    .contact-left-title hr {
+        width: 80px;
+        height: 4px;
+    }
+
+    .follow {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 250px;
+        z-index: -1;
+    }
+
+    .siga {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .siga h1{
+        margin-right: 35px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .siga p{
+        display: none;
+    }
+
+    .Iconis {
+        margin-top: 15%;
+        margin-left: 0;
+    }
+
+    .text {
+        position: relative;
+        bottom: 465px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .text_t h2 {
+        font-size: 50px; 
+    }
+    .text_t h1 {
+        position: relative;
+        top: 5px; 
+    }
+
+    iframe{
+        position: relative;
+        right:85px;
+    }
+
+    .btn{
+        display: none;
+    }
+    .consulta-btn{
+        display: none;
+    }
 }
