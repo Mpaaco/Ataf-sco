@@ -1,122 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="serviços.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script defer src="app.js"></script>
     <title>Serviços</title>
 </head>
+
 <body>
     <div class="header">
-        <nav>
+        <nav class="nav">
             <img src="./Imagens/Logo 2.png" alt="logo" class="logo">
-            <ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
                 <li><a href="./home.html">Inicio</a></li>
                 <li><a href="./Serviços.html">Serviço</a></li>
-                <li><a href="#">Links Úteis</a></li>
+                <li><a href="./Serviços.html">Links Úteis</a></li>
+                <li><a href="./empresa.html" class="btn-x">Empresa</a></li>
+                <li><a href="./contato.html" class="btn-x">Contato</a></li>
             </ul>
             <div>
-                <a href="#" alt ="botão_consulta" class="consulta-btn">Empresa</a>
-                <a href="./empresa.html" alt="botão_contato" class="botton">Contato</a>
+                <a href="./Serviços.html" alt="botão_consulta" class="consulta-btn">Empresa</a>
+                <a href="./contato.html" alt="botão_contato" class="btn-n">Contato</a>
             </div>
         </nav>
 
         <div class="services">
             <h1><span style="color: black">Nossos</span> Serviços</h1>
-            <p>Conheça <span style="color:#D9043D">nossas soluções</span> feitas sob medida para 
+            <p>Conheça <span style="color:#D9043D">nossas soluções</span> feitas sob medida para
                 atender às <span style="color:#D9043D">suas necessidades</span></p>
         </div>
-        
+
         <div class="row">
             <div class="col-md-4">
                 <div class="service-box">
                     <i class="fa-solid fa-building-user"></i>
                     <h3>Abertura / Alteração / Encerramento de
                         Empresas</h3>
-                        <p>Oferecemos serviços especializados para facilitar a criação,
-                        modificação ou encerramento de empresas. Desde a documentação necessária 
-                        até a obtenção de licenças e alvarás, garantimos 
+                    <p>Oferecemos serviços especializados para facilitar a criação,
+                        modificação ou encerramento de empresas. Desde a documentação necessária
+                        até a obtenção de licenças e alvarás, garantimos
                         um suporte completo para a gestão eficiente dos trâmites legais.
 
-                        </p>
+                    </p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service-box">
                     <i class="fa-regular fa-file-lines"></i>
-                    <h3>Declaração de Imposto de Renda Pessoa
-                        Física</h3>
-                        <p>Conte com nossa expertise para a elaboração e entrega da  
-                            Declaração de Imposto de Renda Pessoa Física. Garantimos 
-                            precisão e conformidade com a legislação vigente, 
-                            assegurando que você maximize seus benefícios fiscais e  
-                            evite problemas com o fisco.
-                            </p>
+                    <h3>Alteração contratual</h3>
+                    <p>Um serviço de Alteração Contratual modifica dados no contrato social de uma empresa,
+                        como sócios, endereço, capital social ou objeto social. Requer elaboração de documentos,
+                        assinaturas e registro na Junta Comercial, mantendo as informações da empresa atualizadas
+                        onforme suas necessidades.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service-box">
                     <i class="fa-solid fa-file-signature"></i>
-                    <h3>Escrituração Fiscal</h3>
-                        <p>Realizamos a escrituração fiscal de forma detalhada e                             
-                            organizada, assegurando o cumprimento de todas as
-                            obrigações tributárias. Nossa equipe utiliza ferramentas
-                            avançadas para garantir a exatidão e a conformidade das 
-                            informações fiscais, proporcionando tranquilidade e
-                            segurança para sua empresa.</p>
+                    <h3>Entrega das obrigações acessórias</h3>
+                    <p>O serviço de Entrega das Obrigações Acessórias envolve a preparação e envio de documentos
+                        fiscais, contábeis e trabalhistas exigidos por lei, garantindo que a empresa esteja em
+                        conformidade com as normativas legais e evite penalidades.</p>
                 </div>
             </div>
             <br>
             <div class="col-md-4">
                 <div class="service-box">
-                    <i class="fa-solid fa-business-time"></i>
-                    <h3>Rotinas Trabalhistas</h3>
-                        <p>Gerenciamos todas as rotinas trabalhistas, desde a 
-                            elaboração de contratos até o processamento de folhas de 
-                            pagamento e o cumprimento das obrigações acessórias. 
-                            Garantimos conformidade com a legislação trabalhista, 
-                            promovendo uma gestão eficiente e transparente das 
-                            relações laborais.</p>
+                    <i class="fa-regular fa-file"></i>
+                    <h3>Emissão de Certidões Negativas de Débito</h3>
+                    <p>Um serviço de Emissão de Certidões Negativas de Débito consiste na obtenção de documentos
+                        oficiais que atestam a ausência de pendências financeiras ou tributárias de uma pessoa física ou
+                        jurídica perante órgãos governamentais. Essas certidões são essenciais para participação em
+                        licitações, obtenção de crédito e demonstração de regularidade fiscal.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service-box">
-                    <i class="fa-solid fa-person-cane"></i>
-                    <h3>Solicitação e Acompanhamento de
-                        Aposentadoria</h3>
-                        <p>Facilitamos o processo de solicitação de aposentadoria, 
-                            orientando e fornecendo suporte para garantir que todos 
-                            os requisitos sejam atendidos. Além disso, oferecemos 
-                            acompanhamento contínuo para garantir que todo o 
-                            processo seja conduzido de maneira eficiente e sem 
-                            contratempos</p>
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Controle patrimonial</h3>
+                    <p>Controle Patrimonial é o serviço de gestão e registro dos bens de uma empresa, incluindo
+                        inventário, avaliação e
+                        controle de movimentações, garantindo conformidade com normas contábeis e regulatórias.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service-box">
                     <i class="fa-solid fa-comments-dollar"></i>
-                    <h3>Demais Assuntos, Com Ênfase na
-                        Contabilidade Apurada Pelo Lucro Real</h3>
-                        <p>Gerenciamos todas as rotinas trabalhistas, desde a 
-                            elaboração de contratos até o processamento de folhas de 
-                            pagamento e o cumprimento das obrigações acessórias.  
-                            Garantimos conformidade com a legislação trabalhista,
-                            promovendo uma gestão eficiente e transparente das 
-                            relações laborais.</p>
+                    <h3>Escrituração contábil</h3>
+                    <p>Um serviço de Escrituração Contábil consiste na organização e registro sistemático das transações
+                        financeiras e
+                        econômicas de uma empresa, seguindo princípios contábeis. Isso permite a elaboração de
+                        demonstrações financeiras
+                        precisas e o cumprimento das obrigações fiscais e legais.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Atendimento contábil para pessoas físicas</h3>
+                    <p>Um serviço de Atendimento Contábil para pessoas físicas oferece suporte na gestão financeira
+                        pessoal, incluindo orientação sobre declaração de imposto de renda, planejamento tributário, e
+                        organização de documentos financeiros. Este serviço visa garantir que os indivíduos cumpram suas
+                        obrigações fiscais e otimizem sua situação financeira pessoal.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Planejamento tributário</h3>
+                    <p>Um serviço de Planejamento Tributário envolve estratégias para reduzir legalmente a carga
+                        tributária de uma empresa ou
+                        indivíduo, por meio da análise e otimização de impostos. Isso inclui escolha de regimes
+                        tributários favoráveis,
+                        aplicação de incentivos fiscais, e gestão de obrigações tributárias para maximizar a eficiência
+                        financeira.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa-solid fa-receipt"></i>
+                    <h3>Contabilidade geral</h3>
+                    <p> Fazemos uma gestão abrangente das finanças de uma empresa, envolvendo o registro, análise e
+                        relato de todas as transações financeiras. Isso inclui a preparação de demonstrações contábeis
+                        como o balanço
+                        patrimonial, demonstração de resultados e fluxo de caixa, garantindo que a empresa cumpra com as
+                        normas contábeis e
+                        fiscais vigentes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa-regular fa-message"></i>
+                    <h3>Consultoria fiscal</h3>
+                    <p> Nosso serviço de Consultoria Fiscal oferece orientação especializada para o cumprimento das
+                        obrigações fiscais.
+                        Isso inclui análise de impostos, estratégias para redução da carga tributária e conformidade com
+                        as normas legais,
+                        contribuindo para a saúde financeira e a
+                        conformidade fiscal do cliente.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa-regular fa-rectangle-list"></i>
+                    <h3>Consultoria de departamento pessoal</h3>
+                    <p> Oferecemos suporte especializado na administração e gestão dos seus
+                        colaboradores. Isso inclui orientação sobre legislação trabalhista, elaboração de folha de pagamento,
+                        gestão de benefícios, e cumprimento das obrigações trabalhistas e previdenciárias. O objetivo é garantir conformidade
+                        legal, eficiência operacional e satisfação dos funcionários.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa-solid fa-comments-dollar"></i>
+                    <h3>Consultoria financeira</h3>
+                    <p> Nosso serviço de Consultoria Financeira oferece orientação especializada na gestão eficiente de suas finanças
+                        pessoais ou empresariais. Isso inclui análise de investimentos, planejamento financeiro, gestão de dívidas, e
+                        estratégias para alcançar metas financeiras específicas. O objetivo é maximizar o seu potencial financeiro,
+                        garantindo segurança e crescimento sustentável ao longo do tempo.</p>
                 </div>
             </div>
         </div>
         <div class="link_text">
             <h1><span style="color: black">Links </span>Úteis</h1>
-            <p>Separamos alguns links de alguns serviços para  <span style="color:#D9043D">facilitar</span> o 
-                seu acesso a estes recursos que podem ser  <span style="color:#D9043D">muito úteis</span>. <br>
-                Para acessar os serviços desejados, basta  <span style="color:#D9043D">clicar nos itens abaixo:</span>
+            <p>Separamos alguns links de alguns serviços para <span style="color:#D9043D">facilitar</span> o
+                seu acesso a estes recursos que podem ser <span style="color:#D9043D">muito úteis</span>. <br>
+                Para acessar os serviços desejados, basta <span style="color:#D9043D">clicar nos itens abaixo:</span>
             </p>
         </div>
 
-<!--Links_importantes-->
+        <!--Links_importantes-->
 
 
         <div class="row">
@@ -152,7 +214,7 @@
                 </div>
             </div>
             <br>
-            
+
             <div class="col-md-4">
                 <div class="link-box">
                     <h4>CERTIDÃO DE PESSOA FÍSICA</h4>
@@ -163,52 +225,49 @@
                     <h4>COMPROVANTE DE INSCRIÇÃO CNPJ</h4>
                 </div>
             </div>
-        </div>    
-        
-        <img src="./Imagens/person.png" alt="image" class="img-link">
+        </div>
+
 
 
         <!--HOME_PAGE-->
-<div class="home">
-    <h1>
-        Sobre <span style="color: #D9043D">nós</span>
-    </h1>
-    <p>Somos sua parceira confiável em soluções contábeis. Com um compromisso sólido com a excelência e a transparência,<br>
-        oferecemos serviços abrangentes de contabilidade para atender às necessidades específicas de sua empresa. Nossa equipe de <br> 
-        profissionais altamente qualificados está dedicada a proporcionar assessoria personalizada, garantindo conformidade legal, <br>
-        eficiência financeira e tomadas de decisão fundamentadas.</p>
-    <p>Nós da Atafisco, não apenas gerenciamos números, mas também construímos parcerias duradouras, capacitando seu negócio a <br> 
-        prosperar em um ambiente fiscal complexo. Confie em nós para cuidar dos detalhes, enquanto você se concentra no <br>
-        crescimento e no sucesso de sua empresa.</p>
-     </div>
+        <div class="home">
+            <h1>
+                Sobre <span style="color: #D9043D">nós</span>
+            </h1>
+            <p>Somos sua parceira confiável em soluções contábeis. Com um compromisso sólido com a excelência e a
+                transparência,<br>
+                oferecemos serviços abrangentes de contabilidade para atender às necessidades específicas de sua
+                empresa. Nossa equipe de <br>
+                profissionais altamente qualificados está dedicada a proporcionar assessoria personalizada, garantindo
+                conformidade legal, <br>
+                eficiência financeira e tomadas de decisão fundamentadas.</p>
+            <p>Nós da Atafisco, não apenas gerenciamos números, mas também construímos parcerias duradouras, capacitando
+                seu negócio a <br>
+                prosperar em um ambiente fiscal complexo. Confie em nós para cuidar dos detalhes, enquanto você se
+                concentra no <br>
+                crescimento e no sucesso de sua empresa.</p>
+        </div>
 
-     <div class="mis">
-        <h1>
-         <span style="color: #D9043D">Nossa</span> missão
-        </h1>
-        <p>Fornecer serviços contábeis e idéias a nossos clientes, para que multipliquem <br>
-            resultados e tenham uma boa visão de organização, confiabilidade e precisão <br>
-            dos serviços prestados.
+        <div class="mis">
+            <h1>
+                <span style="color: #D9043D">Nossa</span> missão
+            </h1>
+            <p>Fornecer serviços contábeis e idéias a nossos clientes, para que multipliquem <br>
+                resultados e tenham uma boa visão de organização, confiabilidade e precisão <br>
+                dos serviços prestados.
             </p>
-</div>
-<!--End_text-->
+        </div>
+        <!--End_text-->
+    <section class="end">
         <div class="final">
             <div class="final_text">
                 <h1>Nossos serviços te interessaram?</h1>
                 <p>Entre em contato conosco através do nosso formulário. <br>
                     Você pode fazê-lo clicando no botão abaixo.</p>
-            </div>
-        </div>
-        
-        <div class="final">
-        <a href="#" class="botton">Contato</a>
-        </div>
-        
-        <img src="./Imagens/Rectangle 5.png" alt="quadrado" class="img">
-
-
-
+                <a href="./contato.html" class="botton">Contato</a>
     
-    
+        </div>
+    </section>    
 </body>
+
 </html>
