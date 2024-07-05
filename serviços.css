@@ -6,13 +6,9 @@
 }
 
 /*-------------navbar---------------*/
-.header{
-    width: 100%;
-    min-height: 100vh;
-    padding: 10px 10%;
-    overflow: hidden;
-    position: relative;
-    
+.header {
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 nav{
     padding: 10px 0;
@@ -62,6 +58,44 @@ nav ul li a:hover{
 .botton:hover{
     border-top-right-radius: 15px;
     transform: scale(1.05);
+}
+
+
+.btn-n{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: white;
+    background-color: #FC3030;
+    font-size: 14px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    transition: 0.4s;    
+}
+
+.btn-n:hover{
+    border-top-right-radius: 15px;
+    transform: scale(1.05);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 2;
+}
+
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 2px;
+    background: #FC3030;
+    transition: 0.3s;
 }
 
 /*-------------home_page---------------*/
@@ -157,12 +191,6 @@ body{
     font-size: 20px;
 }
 
-.img-link{
-    position: absolute;
-    width: 383px;
-    left: 1400px;
-    top: 1700px;
-}
 
 /*-------home_page----------*/
 
@@ -180,7 +208,7 @@ body{
     
 }
 .home p{
-    text-align: justify;
+    text-align: center;
     background-color: #FC3030;
     padding: 15px;
     border-radius: 30px;
@@ -236,7 +264,11 @@ body{
 }
 
 /*-------------Final_text---------------*/
-
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .final{
     font-size: 20px;
     font-weight: 100;
@@ -246,6 +278,14 @@ body{
     top: 350px;
     text-align: center;
     z-index: 2;
+    background-color: #D9043D;
+    padding: 25px;
+    width: 1500px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img{
@@ -257,3 +297,95 @@ body{
     z-index: 1;
 }
 
+.btn-x{
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .home {
+        padding: 5px;
+        height: 350px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .logo{
+        position: relative;
+        bottom: 30px;
+    }
+    .hamburger {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 30px;
+        z-index: 1;
+        
+    }
+    .btn-x{
+        display: block;
+    }
+    .btn-n{
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+  
+      .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+      }
+    
+      .nav.active .nav-list a {
+        opacity: 1;
+      }
+    
+      .nav.active .hamburger {
+        position: fixed;
+        border-top-color: transparent;
+      }
+      .btn-n{
+        display: none;
+      }
+    .consulta-btn{
+        display: none;
+    }
+
+.mis{
+    position: relative;
+    top: 220px;
+}
+
+}
