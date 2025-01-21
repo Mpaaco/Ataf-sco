@@ -1,6 +1,6 @@
 Este repositório contém o código-fonte do novo site da Atafísco, uma empresa de contabilidade. O site foi desenvolvido com HTML, CSS e JavaScript, é totalmente responsivo e fácil de navegar. As principais seções incluem:
 
-Página Inicial: Apresentação da empresa e dos principais serviços oferecidos.
+Página Inicial: Apresentação da empresa e dos principais serviços oferecidos. <\br>
 Serviços: Descrição detalhada de cada serviço, como planejamento tributário, contabilidade empresarial e consultoria fiscal.
 Equipe: Perfis dos principais profissionais da Atafísco, com fotos e breves biografias.
 Contato: Formulário de contato, informações de endereço, telefone, e-mail e um mapa interativo.
