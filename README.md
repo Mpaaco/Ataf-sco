@@ -1,4 +1,4 @@
-Este repositório contém o código-fonte do novo site da **Atafísco**, uma **empresa de contabilidade**. O site foi desenvolvido com HTML, CSS e JavaScript, é totalmente responsivo e fácil de navegar. Seu desing foi feito em Figma. As principais seções incluem:
+Este repositório contém o código-fonte do novo site da **Atafísco**, uma **empresa de contabilidade**. O site foi desenvolvido com **HTML, CSS e JavaScript**, é totalmente responsivo e fácil de navegar. Seu desing foi feito em Figma. As principais seções incluem:
 
 **Página Inicial:** Apresentação da empresa e dos principais serviços oferecidos.  
 **Serviços:** Descrição detalhada de cada serviço, como planejamento tributário, contabilidade empresarial e consultoria fiscal.  
